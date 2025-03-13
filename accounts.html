@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hesabım</title>
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <link
+     rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header_top">
+            <div class="header_container container">
+                <div class="header_contact">
+                    <span>(+90) 545 067 67 67 </span>
+
+                    <span>Konumumuz</span>
+                </div>
+
+                <p class="header_alert-news">Süper Fiyat Fırsatları - Kupon biriktirmeye başla</p>
+
+                <a href="login-register.html" class="header_top-action">
+                    Giriş Yap veya Kayıt Ol
+                </a>
+            </div>
+        </div>
+
+        <nav class="nav container">
+            <a href="index.html" class="nav_logo">
+                <img src="Assets/img/logo.png" alt="">
+            </a>
+
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
+
+                    <li class="nav_item">
+                        <a href="index.html" class="nav_link">Anasayfa</a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="shop.html" class="nav_link">Dükkan</a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="accounts.html" class="nav_link active-link">Hesabım</a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="compare.html" class="nav_link ">Karşılaştır</a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="login-register.html" class="nav_link">Giriş</a>
+                    </li>
+
+
+                </ul>
+
+                <div class="header_search">
+                    <input type="text" placeholder="Ne arıyorsun?" class="form_input">
+
+                    <button class="search_btn">
+                        <img src="Assets/img/search_icon.png" alt="">
+                    </button>
+                </div>
+
+                
+            </div>
+
+            <div class="header_user-actions">
+                <a href="wishlist.html" class="header_action-btn">
+                    <img src="Assets/img/kalp.png" alt="">
+                    <span class="count">3</span>
+                </a>
+
+                <a href="cart.html" class="header_action-btn">
+                    <img src="Assets/img/cart.png" alt="">
+                    <span class="count">3</span>
+                </a>
+                
+            </div>
+
+            
+        </nav>
+
+    </header>
+
+    <main class="main">
+        <section class="breadcrumb">
+            <ul class="breadcrumb_list flex container">
+                <li><a href="index.html" class="breadcrumb_link">Hesabım</a></li>
+                <li><span class="breadcrumb_link">></span></li> 
+            </ul>
+        </section>
+
+        <section class="accounts section--lg">
+            <div class="accounts_container container grid">
+                <div class="account_tabs">
+                    <p class="account_tab active-tab" data-target="#dashboard">
+                        <i class="fi fi-rr-settings-sliders"></i> Kontrol Paneli
+                    </p>
+
+                    <p class="account_tab" data-target="#orders">
+                        <i class="fi fi-rr-order-history"></i> Siparişler
+                    </p>
+
+                    <p class="account_tab " data-target="#update-profile">
+                        <i class="fi fi-rr-user"></i> Profili Güncelle
+                    </p>
+
+                    <p class="account_tab " data-target="#address">
+                        <i class="fi fi-rr-postal-address"></i> Adresim
+                    </p>
+
+                    <p class="account_tab " data-target="#change-password">
+                        <i class="fi fi-rr-lock"></i>Parolamı Değiştir
+                    </p>
+
+                    <p class="account_tab ">
+                        <i class="fi fi-rr-sign-out-alt"></i> Çıkış Yap
+                    </p>
+                </div>
+
+                <div class="tabs_content">
+                    <div class="tab_content active-tab" content id="dashboard">
+                        <h3 class="tab_header">Merhaba Çağrı !</h3>
+
+                        <div class="tab_body">
+                            <p class="tab_description">
+                                Kontrol Panelimizden profilinizi düzenleyebilirsiniz.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="tab_content " content id="orders">
+                        <h3 class="tab_header">Siparişlerim</h3>
+
+                        <div class="tab_body">
+                            <table class="placed_order-table">
+                                <tr>
+                                    <th>Sipariş Kodu</th>
+                                    <th>Tarih</th>
+                                    <th>Durum</th>
+                                    <th>Toplam</th>
+                                    <th>Hareket</th>
+                                </tr>
+
+                                <tr>
+                                    <td>1253</td>
+                                    <td>01.08.2024</td>
+                                    <td>Kargoda</td>
+                                    <td>125 ₺</td>
+                                    <td><a href="" class="view_order">Gözat</a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>4569</td>
+                                    <td>11.06.2024</td>
+                                    <td>Teslim Edildi.</td>
+                                    <td>5500 ₺</td>
+                                    <td><a href="" class="view_order">Gözat</a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>4569</td>
+                                    <td>23.05.2024</td>
+                                    <td>Teslim Edildi.</td>
+                                    <td>7100 ₺</td>
+                                    <td><a href="" class="view_order">Gözat</a></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="tab_content " content id="update-profile">
+                        <h3 class="tab_header">Profilini Güncelle</h3>
+
+                        <div class="tab_body">
+                            <form action="" class="form grid">
+                                <input type="text" class="form_input" placeholder="Kullanıcı Adı">
+                                <button class="form_btn">
+                                    <button class="btn btn--md">Güncelle</button>
+                                </button>
+                            </form>
+                        </div>
+
+                    </div>
+
+                    <div class="tab_content" content id="address">
+                        <h3 class="tab_header">Kargo Adresim</h3>
+
+                        <div class="tab_body">
+                            <address class="address">
+                                Kandilli Belediyesi, Gökçeler Mahallesi,Vatan Caddesi,
+                                Erdem Sokak,No:2,
+                                Kdz.Ereğli / Zonguldak
+                            </address>
+                            <p class="country">Türkiye</p>
+                            <a href="" class="edit">Düzenle</a>
+                        </div>
+                    </div>
+
+                    <div class="tab_content" content id="change-password">
+                        <h3 class="tab_header">Parolamı Değiştir</h3>
+
+                        <div class="tab_body">
+                            <form action="" class="form grid">
+                                <input type="password" class="form_input" placeholder="Mevcut Parolanız">
+                                <input type="password" class="form_input" placeholder="Yeni Parolanız">
+                                <input type="password" class="form_input" placeholder="Tekrar Yeni Parolanız">
+                                <div class="form_btn">
+                                    <button class="btn btn--md">Değiştir</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter section ">
+            <div class="newsletter_container container grid">
+                <h3 class="newsletter_title flex">
+                    <img src="Assets/img/email.png" alt="" class="newsletter_icon">
+                    Haberler için Üye Ol
+                </h3>
+
+                <p class="newsletter_description">
+                    500 ₺ ve üstü alışverişlerde +50 Kupon puanı
+                </p>
+
+                <form action="" class="newsletter_form">
+                    <input type="text" placeholder="E-mail adresini gir" class="newsletter_input">
+                    <button type="submit" class="newsletter_btn">Abone Ol</button>
+                    
+                </form>
+            </div>
+        </section>
+    </main>
+    
+
+    <footer class="footer container">
+        <div class="footer_container grid">
+            <div class="footer_content">
+                <a href="index.html" class="footer_logo">
+                    <img src="Assets/img/logo.png" alt="" class="footer_logo-img">
+                </a>
+
+                <h4 class="footer_subtitle">İletişim</h4>
+
+                <p class="footer_description">
+                    <span>Adres : </span> Kandilli Belediyesi , Gökçeler Mahallesi
+                      , Erdem Sokak , No:2 
+                      <br>
+                      Kdz.Ereğli / Zonguldak
+                
+                </p>
+                <hr>
+                <p class="footer_description">
+                    <span>Telefon:</span> 0 372 327 22 47
+                </p>
+
+                <div class="footer_social">
+                    <h4 class="footer_subtitle">Takip Edebilirsiniz</h4>
+
+                    <div class="footer_social-links flex">
+                        <a href="">
+                            <img src="Assets/img/facebook.png" alt="" class="footer_social-icon">
+                        </a>
+
+                        <a href="">
+                            <img src="Assets/img/instagram.png" alt="" class="footer_social-icon">
+                        </a>
+
+                        <a href="">
+                            <img src="Assets/img/youtube.png" alt="" class="footer_social-icon">
+                        </a>
+
+                        <a href="">
+                            <img src="Assets/img/twitter.png" alt="" class="footer_social-icon">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer_content">
+                <h3 class="footer_title">Adres</h3>
+                
+                <ul class="footer_links">
+                    <li><a href="" class="footer_link">Hakkımızda</a></li>
+                    <li><a href="" class="footer_link">Teslimat Bilgisi</a></li>
+                    <li><a href="" class="footer_link">Gizlilik Politikası</a></li>
+                    <li><a href="" class="footer_link">Şartlar & Koşullar</a></li>
+                    <li><a href="" class="footer_link">İletişim</a></li>
+                    <li><a href="" class="footer_link">Destek Merkezi</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_content">
+                <h3 class="footer_title">Hesabım</h3>
+
+                <ul class="footer_links">
+                    <li><a href="" class="footer_link">Kayıt Ol</a></li>
+                    <li><a href="" class="footer_link">Sepeti Görüntüle</a></li>
+                    <li><a href="" class="footer_link">İstek Listesi</a></li>
+                    <li><a href="" class="footer_link">Siparişlerini Takip Et</a></li>
+                    <li><a href="" class="footer_link">Yardım</a></li>
+                    <li><a href="" class="footer_link">Sipariş</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_content">
+                <h3 class="footer_title">Güvenli Ödeme Seçenekleri</h3>
+
+                <img src="Assets/img/kartlar.png" alt="" class="payment_img">
+            </div>
+        </div>
+
+        <div class="footer_bottom">
+            <p class="copyright">2024 ®Pazar | Tüm Hakları Saklıdır.</p>
+            <span class="designer">Çağrı Aydın tarafından tasarlandı.</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="Assets/js/main.js"></script>
+</body>
+</html>
